@@ -1,7 +1,8 @@
 //machten van 2
 console.log(2)
-for(let i = 2;i<=500;i=i+2){
-    let som = i*2
-    console.log(som)
+for(let i = 1;i<=1000;i++){
+  if(i**2<=1000){
+      console.log(i)
+  }
 }
 
