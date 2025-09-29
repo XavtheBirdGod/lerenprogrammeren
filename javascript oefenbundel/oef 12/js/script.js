@@ -1,22 +1,7 @@
-function isPalindroom(woord){
-    let omgekeerd = ""
-    for(let i = woord.length - 1;i>=0;i--){
-        omgekeerd += woord[i]
-    }
-    return woord === omgekeerd
+function som(x, y){
+
 }
 
-let woord = prompt("geef een woord in")
-
-document.querySelector("#meep").innerHTML =
-    isPalindroom(woord)
-? `"${woord}" is een palindroom`
-: `"${woord}" is geen palindroom`
-
-/*
-bevraag
-functie
-ontvang
-lengte
-gebruik lengte om te reverse
- */
+let getal1 = parseInt(prompt("geef een getal"))
+let getal2 = parseInt(prompt("geef nog een getal"))
+console.log(som(getal1,getal2))
