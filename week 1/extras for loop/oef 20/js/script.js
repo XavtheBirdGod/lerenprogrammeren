@@ -1,6 +1,10 @@
 //omgekeerde van een getal
-let getal = window.prompt("geef een getal")
- getal = getal.split
-let getalArray = Array.from(getal)
+let number = parseInt(prompt("voer een getal in"))
+let reverse = 0
 
-console.log(getalArray)
+for(let i = number;i>0;i = (i-(i%10)) / 10) {
+    let laatsteCijfer = i%10 //haal het laaste cijfer
+    reverse = reverse * 10 + laatsteCijfer
+}
+
+console.log(reverse)
